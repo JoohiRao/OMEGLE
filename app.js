@@ -96,4 +96,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/", indexRouter);
 
-server.listen(3000); //server is built on app which will allow express and socket io to run so we can use both now 
+server.listen(process.env.PORT || 3000); //server is built on app which will allow express and socket io to run so we can use both now 
